@@ -1,10 +1,60 @@
 //== Base
 
+@font-face {
+    font-family: 'RobotoCondensedBold';
+    src: url('../resources/fonts/RobotoCondensed-Bold.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedRegular';
+    src: url('../resources/fonts/RobotoCondensed-Regular.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedLight';
+    src: url('../resources/fonts/RobotoCondensed-Light.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedBoldItalic';
+    src: url('../resources/fonts/RobotoCondensed-BoldItalic.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedItalic';
+    src: url('../resources/fonts/RobotoCondensed-Italic.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RobotoCondensedLightItalic';
+    src: url('../resources/fonts/RobotoCondensed-LightItalic.ttf') format('opentype'),url('../resources/fonts/RobotoCondensed-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+$robotocondensed-bold:    "RobotoCondensedBold", sans-serif;
+$robotocondensed-regular: "RobotoCondensedRegular", sans-serif;
+$robotocondensed-light:   "RobotoCondensedLight", sans-serif;
+
+$robotocondensed-bold-italic:  "RobotoCondensedBoldItalic", sans-serif;
+$robotocondensed-italic:       "RobotoCondensedItalic", sans-serif;
+$robotocondensed-light-italic: "RobotoCondensedLightItalic", sans-serif;
+
 html,
 body {
     margin: 0;
     font-size:   $font-size;
-    font-family: $font-family;
+    font-family: $robotocondensed-regular;
     line-height: $font-height;
     color:       $color-foreground;
     background:  $color-background;

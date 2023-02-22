@@ -1,0 +1,24 @@
+<div class="bootstrap-container">
+    <h1 class="text-center">Services</h1>
+
+    <!-- Cards -->
+    <div class="row">
+        <sly data-sly-list.item="${resource.getChildren}">
+            <sly data-sly-list.children="${item.getChildren}">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
+                    <a href="${children.path}" class="text-decoration-none text-center" target="_blank">
+                        <div class="card">
+                            <img src="${children.image}" class="card-img-top" alt="${children.title}">
+                            <div class="card-body py-4">
+                                <h5 class="card-title mb-3">${children.title}</h5>
+                                <a href="${children.path}" class="btn btn-primary w-100">${children.buttontext}</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </sly>
+        </sly>
+    </div>
+    <!-- End Cards -->
+    
+</div>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Services Information"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-author_editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <multifieldwithmap
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Multifield With Map"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <serviceinfo
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Click 'Add Field' to add a new Service"
+                        fieldLabel="Services"
+                        required="{Boolean}false">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            emptyText="services"
+                            name="./services">
+                            <items jcr:primaryType="nt:unstructured">
+                                <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Title"
+                                    fieldLabel="Title"
+                                    forceSelection="{Boolean}true"
+                                    required="{Boolean}true"
+                                    name="./title"/>
+                                <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                    emptyText="Image"
+                                    fieldLabel="Image"
+                                    mimeType="image"
+                                    rootPath="/content/dam"
+                                    forceSelection="{Boolean}true"
+                                    required="{Boolean}true"
+                                    name="./image"/>
+                                <path
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                    emptyText="Path"
+                                    fieldLabel="Path"
+                                    rootPath="/content"
+                                    name="./path"/>                                    >
+                                <buttontext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    emptyText="Button Text"
+                                    fieldLabel="Button Text"
+                                    forceSelection="{Boolean}true"
+                                    required="{Boolean}true"
+                                    name="./buttontext"/>
+                            </items>
+                        </field>
+                    </serviceinfo>
+                </items>
+            </multifieldwithmap>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Roboto Condensed, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #212529;
+  text-align: left;
+  background-color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3em;
+}
+h1,
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.75em;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: #000;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #ffdb01;
+}
+.text-helium {
+  color: #ffdb01;
+}
+header.experiencefragment {
+  padding: 0 15px;
+}
+header .bootstrap-container-fluid {
+  width: calc(100vw - 56px);
+}
+main {
+  background: #fff;
+}
+main.container {
+  min-height: 50vh;
+  padding: 24px;
+}
+.navbar {
+  padding: 8px;
+}
+.nav-link {
+  transition: all 0.4s ease-in;
+  color: rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none;
+}
+header.experiencefragment a:focus,
+header.experiencefragment a:hover {
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none;
+}
+.navbar-brand {
+  padding: 20px 0;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.social-media-sharing a {
+  height: 38px;
+  width: 38px;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 5px;
+}
+.social-media-sharing img {
+  height: 38px;
+  width: 38px;
+}
+.bg-helium {
+  background-color: #ffdb01 !important;
+}
+.form-control {
+  line-height: 2;
+  border-radius: 0.25rem;
+}

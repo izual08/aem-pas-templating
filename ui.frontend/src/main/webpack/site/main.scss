@@ -1,5 +1,7 @@
 
 @import 'variables';
 @import 'base';
+@import 'homepage';
 @import '../components/**/*.scss';
 @import './styles/*.scss';
+@import './vendor/bootstrap/css/bootstrap.min.css';
